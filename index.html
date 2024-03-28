@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="./style/body.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="nav" style="position: fixed; bottom: 0;">
+        <div class="video-content">
+            <div class="field-text">
+                <h1 class="h1-field-pro">FIELDPRO</h1>
+                <p class="p-p-field-pro">Precisão climática</p>
+            </div>
+            <div class="video-cont">
+                <p class="p-video-content">Em breve mudaremos a forma como você enxerga o mundo</p>
+                <video class="video---" src="./assets/video/videofiled.mp4" autoplay muted loop></video>
+            </div>
+        </div>
+        <div class="sec-embreve">
+            <div class="cont-contato" onmouseover="showBar(this)" onmouseout="hideBar()">
+                <p class="text-email-contato">contato@fieldpro.com.br</p>
+                <a class="a-contato" href="https://api.whatsapp.com/send/?phone=5511997371775&text&type=phone_number&app_absent=0">
+                    <div class="contato-email">
+                        Entre em contato
+                        <img src="./assets/icons/arrow-right-sm.svg" alt="">
+                    </div>
+                </a>
+            </div>
+            <h1 class="h1-body" onmouseenter="showBar(this)" onmouseleave="hideBar()">em breve...</h1>
+            <div class="inv"></div>
+        </div>
+        <div id="downloadButton" class="cont-download-app" onmouseover="showBar(this)" onmouseleave="hideBar()">
+            <img class="logo-icon-app" src="./assets/image/logo_manifest.svg" alt="">
+            <div class="text-app">
+                <h1 class="h1-fieldpro-app">FieldPRO</h1>
+                <p class="p-fieldpro-app">Gratuito</p>
+            </div>
+            <img class="download-icon-app" src="./assets/icons/Download.svg" alt="">
+        </div>
+    </section>
+    <div class="bar"></div>
+
+    <video id="myVideo" src="./assets/video/videofiled.mp4" style="width: 100%; height: 100vh; object-fit: cover;" autoplay muted loop></video>
+
+    <script src="./script/script.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,220 @@
+body {
+    margin: 0;
+    font-family: Inter;
+    background-color: #000;
+}
+
+    .nav {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        width: 100%;
+        padding: 34px;
+        box-sizing: border-box;
+        z-index: 999;
+        max-height: 100vh;
+        overflow-y: scroll;
+        box-sizing: border-box;
+    }
+
+    .cont-contato {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+
+    }
+
+    .text-email-contato {
+        color: #ffffffaa;
+        margin: 0;
+        font-weight: 500;
+    }
+
+    .contato-email {
+        width: 100%;
+        color: #fff;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 4px;
+        margin: 0;
+        border-bottom: 2px solid #fff;
+        width: 150px;
+        font-size: 14px;
+    }
+
+    .h1-body {
+        font-size: 16px;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    .cont-download-app {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        padding: 22px;
+        box-sizing: border-box;
+        border-radius: 24px;
+        background: #ffffff35;
+    }
+
+    .logo-icon-app {
+        width: 48px;
+    }
+
+    .text-app {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        align-items: start;
+        justify-content: start;
+    }
+
+    .h1-fieldpro-app {
+        font-size: 20px;
+        color: #fff;
+        margin: 0;
+        font-weight: 600;
+    }
+
+    .p-fieldpro-app {
+        font-size: 14px;
+        color: #ffffffaa;
+        margin: 0;
+        font-weight: 500;
+    }
+
+    .download-icon-app {
+        width: 34px;
+    }
+
+    .bar {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 150px;
+        background-color: #121212;
+        transform: translateY(100%);
+        transition: transform 0.3s ease;
+    }
+    
+    .sec-embreve {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    a, a:visited {
+        text-decoration: none;
+    }
+
+    @media (max-width: 830px) {
+        .sec-embreve {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 34px;
+            background-color: #121212;
+            order: 2;
+        } 
+
+        .inv {
+            display: none;
+        }
+
+        .nav {
+            padding: 0;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+            padding-top: 34px;
+            overflow-y: scroll;
+        }
+        .cont-contato {
+            padding-bottom: 34px;
+            order: 2;
+        }
+
+        .h1-body {
+            padding-top: 24px;
+        }
+
+        #myVideo {
+            display: none;
+        }
+
+        .nav {
+            gap: 34px;
+        }
+
+        .video--- {
+            width: 90%;
+            height: 50vh;
+            object-fit: cover;
+        }
+    }
+
+    .video-content {
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+ .video--- {
+        border-radius: 18px;
+        border: 2.5px solid #A1A1A1;
+    }
+
+    @media (min-width: 830px) {
+        .video-content{
+            display: none;
+        }
+    }
+
+    .p-video-content {
+        font-size: 10px;
+        font-weight: 400;
+        color: #fff;
+        text-align: center;
+    }
+
+    .video-cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+    .field-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .h1-field-pro {
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: 500;
+        margin: 0;
+        color: #fff;
+    }
+
+    .p-p-field-pro {
+        margin: 0;
+        font-size: 14px;
+        font-weight: 400;
+        color: #fff;
+    }
