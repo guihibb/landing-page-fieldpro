@@ -20,6 +20,18 @@ function showBar(element) {
     }
   });
 
+  
+
+  const video2 = document.getElementById('video2');
+
+  video2.addEventListener("click", function() {
+    if (video2.paused) {
+        video2.play();
+    } else {
+        video2.pause();
+    }
+});
+
   document.getElementById("downloadButton").addEventListener("click", function() {
     var userAgent = navigator.userAgent || navigator.vendor || window.opera;
     
