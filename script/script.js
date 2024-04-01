@@ -43,3 +43,21 @@ function showBar(element) {
         window.location.href = "https://play.google.com/store/apps/details?id=com.app.fieldpro";
     }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  var isAutoplayBlocked = false;
+
+  var video = document.getElementById('video2');
+  
+  // Verifica se o autoplay do vídeo está bloqueado
+  video.play().then(function() {
+    // O autoplay do vídeo não foi bloqueado
+  }).catch(function(error) {
+    // O autoplay do vídeo foi bloqueado
+    isAutoplayBlocked = true;
+    document.getElementById('play').style.display = 'block';
+  });
+  
+  // Pára a reprodução do vídeo depois de verificar o autoplay
+  video.pause();
+});

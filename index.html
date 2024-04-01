@@ -15,9 +15,11 @@
     <meta property="og:image" content="./assets/image/thumbnail.png">
 </head>
 <body>
+    <h1 class="h1-body" onmouseenter="showBar(this)" onmouseleave="hideBar()">em breve...</h1>
     <section class="nav" style="position: fixed; bottom: 0;">
         <div class="video-content">
             <div class="video-cont">
+                <img id="playButton" class="play" src="./assets/icons/play.svg" alt="">
                 <video id="video2" class="video---" src="./assets/video/videofiled.mp4" autoplay muted loop></video>
             </div>
         </div>
@@ -31,7 +33,6 @@
                     </div>
                 </a>
             </div>
-            <h1 class="h1-body" onmouseenter="showBar(this)" onmouseleave="hideBar()">em breve...</h1>
             <div class="inv"></div>
         </div>
         <div id="downloadButton" class="cont-download-app" onmouseover="showBar(this)" onmouseleave="hideBar()">
